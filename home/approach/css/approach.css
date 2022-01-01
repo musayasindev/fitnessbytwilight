@@ -13,6 +13,36 @@ html {
   text-align: center;
 }
 
+@media only screen and (max-width: 760px) {
+
+  #wrapper {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+
+}
+
+ @media only screen and (max-width: 400px) {
+
+  #wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(0.6);
+    -webkit-transform: translateY(-50%) translateX(-50%) scale(0.6);
+    -moz-transform: translateY(-50%) translateX(-50%) scale(0.6);
+    -ms-transform: translateY(-50%) translateX(-50%) scale(0.6);
+    -o-transform: translateY(-50%) translateX(-50%) scale(0.6);
+}
+
+} 
+
+
+
+
 html h1, html h2, html h3, html h4, html h5, html h6 {
   margin: 0;
 }
@@ -43,7 +73,7 @@ html input[type="range"] {
   border-radius: 500px;
   width: 400px;
   max-width: 100%;
-  margin: 24px 0 16px;
+  margin: 24px 0 24px;
   -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
   transition: -webkit-box-shadow 0.2s ease-in-out;
   transition: box-shadow 0.2s ease-in-out;
@@ -205,6 +235,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 
 
 /*# sourceMappingURL=approach.css.map */
