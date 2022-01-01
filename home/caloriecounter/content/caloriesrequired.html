@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Requirements</title>
+
+        <!-- axios -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- script -->
+        <script type="module" src="../scripts/caloriesrequiredclient.js"></script>
+
+        <!-- styles -->
+        <link rel="stylesheet" href="../css/caloriesrequired.css">
+
+        <link rel="stylesheet" href="../css/radio.scss">
+
+
+</head>
+<body>
+
+
+
+
+
+    <div class="container">
+
+          <label>
+      <input type="radio" name="light" checked>
+      <span class="design"></span>
+      <span class="text">Option 1</span>
+    </label>
+  
+    <label>
+      <input type="radio" name="light">
+      <span class="design"></span>
+      <span class="text">Option 2</span>
+    </label>
+  
+    <label>
+      <input type="radio" name="light">
+      <span class="design"></span>
+      <span class="text">Option 3</span>
+    </label>
+
+
+        <form id="form" action="">
+
+            <div class="inputs">
+
+
+                <h1 class="holders">Your gender</h1>
+    
+                <div class="holdergender holders">
+
+                    <div>
+
+                        <!-- <label class="rad-label" >
+                          <input id="m" value="m" type="radio" class="rad-input" name="goal">
+                          <div class="rad-design"></div>
+                          <div class="rad-text">Male</div>
+                        </label>
+                      
+                        <label class="rad-label" >
+                          <input id="f" value="f" type="radio" class="rad-input" name="gender">
+                          <div class="rad-design"></div>
+                          <div class="rad-text">Female</div>
+                        </label> -->
+
+
+                      
+                      </div>
+
+
+                    <!-- <label for="gender">male</label><input id="m" class="gender radio" type="radio" name="gender" value="m" placeholder="male"></label>
+                      
+                    <label for="gender">female</label><input id="f" class="gender radio" type="radio" name="gender" value="f"></label>
+                         -->
+                </div>
+            
+                <h1 class="holders">Your Age</h1>
+            
+                <input type="number" name="inputAge" id="inputAge" placeholder="eg 17">
+            
+                <h1 class="holders">Your Height</h1>
+            
+                <input type="number" name="inputHeight" id="inputHeight" placeholder="cm">
+            
+                <h1 class="holders">Your Weight</h1>
+            
+                <input type="number" name="inputWeight" id="inputWeight" placeholder="kg">
+            
+                <h1 class="holders">Your activitylevel </h1>
+            
+            
+                <div class="holderactivity holders">
+
+                    <div>
+
+                        <label class="rad-label" for="activity">
+                          <input id="sedentary" value="sedentary" type="radio" class="rad-input" name="activity">
+                          <div class="rad-design"></div>
+                          <div class="rad-text">Sedentary</div>
+                        </label>
+                      
+                        <label class="rad-label" for="activity">
+                          <input id="light" value="light" type="radio" class="rad-input" name="activity">
+                          <div class="rad-design"></div>
+                          <div class="rad-text">light</div>
+                        </label>
+
+                        <label class="rad-label" for="activity">
+                            <input id="moderate" value="moderate" type="radio" class="rad-input" name="activity">
+                            <div class="rad-design"></div>
+                            <div class="rad-text">moderate</div>
+                          </label>
+                        
+                          <label class="rad-label" for="activity">
+                            <input id="high" value="high" type="radio" class="rad-input" name="activity">
+                            <div class="rad-design"></div>
+                            <div class="rad-text">high</div>
+                          </label>
+
+                          <label class="rad-label" for="activity">
+                            <input id="extreme" value="extreme" type="radio" class="rad-input" name="activity">
+                            <div class="rad-design"></div>
+                            <div class="rad-text">extreme</div>
+                          </label>
+                      
+                      </div>
+
+                </div>
+            
+                <h1 class="holders">Your goal</h1>
+            
+                <div class="holdergoal holders">
+            
+                    <div>
+
+                      <label class="rad-label" for="goal">
+                        <input id="reduction" value="reduction" type="radio" class="rad-input" name="goal">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">reduction</div>
+                      </label>
+                    
+                      <label class="rad-label" for="goal">
+                        <input id="maintain" value="maintain" type="radio" class="rad-input" name="goal">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">maintain</div>
+                      </label>
+
+                      <label class="rad-label" for="goal">
+                          <input id="gain" value="gain" type="radio" class="rad-input" name="goal">
+                          <div class="rad-design"></div>
+                          <div class="rad-text">gain</div>
+                        </label>
+                    
+                    </div>
+
+                </div>
+            
+                <h1 class="holders">Your approach</h1>
+            
+                <div class="holderapproach holders">
+
+                    <div>
+
+                      <label class="rad-label" for="approach">
+                        <input id="slow" value="slow" type="radio" class="rad-input" name="approach">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">slow</div>
+                      </label>
+                    
+                      <label class="rad-label" for="approach">
+                        <input id="normal" value="normal" type="radio" class="rad-input" name="approach">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">normal</div>
+                      </label>
+
+                      <label class="rad-label" for="approach">
+                          <input id="agressive" value="agressive" type="radio" class="rad-input" name="approach">
+                          <div class="rad-design"></div>
+                          <div class="rad-text">agressive</div>
+                        </label>
+                      
+                        <label class="rad-label" for="approach">
+                          <input id="very agressive" value="very agressive" type="radio" class="rad-input" name="approach">
+                          <div class="rad-design"></div>
+                          <div class="rad-text">very agressive</div>
+                        </label>
+                    
+                    </div>
+                    
+
+                </div>
+
+                <div class="submitbtnholder">
+
+
+                <button id="submitbtn">submit</button>
+
+
+
+                </div>
+
+            </div>
+        
+    
+        </form>
+    
+    
+
+
+
+    </div>
+
+    
+ 
+    
+</body>
+</html>
